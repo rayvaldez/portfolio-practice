@@ -1,6 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+}
+
 body {
   margin: 0;
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #262626;
+  background-image: linear-gradient(225deg, #262626 0%, #181818 46%, #030303 100%);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2.7em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .navigation {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+}
+
+header ul li {
+  color: #FFF;
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #FFF;
 }
