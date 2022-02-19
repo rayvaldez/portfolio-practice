@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&family=El+Messiri:wght@400;500&family=Montserrat:wght@400;700&family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Zen+Tokyo+Zoo&display=swap');
 
 /* Medium screens */
 @media all and (max-width: 800px) {
@@ -57,7 +57,8 @@ header {
 }
 
 header .logo {
-  font-weight: 500;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  text-shadow: 2px 3px 6px rgba(0,0,0,0.41);
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
@@ -84,6 +85,10 @@ header ul li a {
   overflow: hidden;
   position: relative;
   display: inline-block;
+}
+
+a, a:visited {
+  color: inherit;
 }
 
 a::before,
@@ -137,35 +142,11 @@ a:hover span {
   width: 92%;
   margin-top: 85px;
   margin-left: 60px;
-  font-family: "Markazi Text", serif;
+  font-family: 'Assistant', sans-serif;
   background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 2)), url('./images/jonggak1.jpg');
   background-position: center;
   background-size: cover;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-
-.landing-container h1 {
-  font-size: 5em;
-  font-weight: 500;
-  padding-top: 165px;
-  padding-left: 80px;
-  text-shadow: 3px 3px 5px #040404;
-}
-
-.landing-container h2 {
-  font-size: 2.7em;
-  font-weight: 400;
-  padding-left: 95px;
-}
-
-.landing-container #developer {
-  height: 400px;
-  width: 400px;
-  margin-left: 750px;
-  margin-top: -250px;
-  transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
-  overflow: hidden;
 }
 
 .section-about {
@@ -175,6 +156,18 @@ a:hover span {
   width: 92%;
   margin-left: 60px;
   margin-top: 75px;
+  overflow: hidden;
+}
+
+.section-about #developer {
+  position: relative;
+  top: 22%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
   overflow: hidden;
 }
 
@@ -242,4 +235,91 @@ a:hover span {
 .section-contact p {
   font-size: 1em;
   padding-left: 20px;
+}
+
+
+.ray {
+  filter: brightness(1.6);
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  /* padding: 2em 5em; */
+  font: normal 50px/60px Montserrat, sans-serif;
+  color: #FFF;
+}
+.ray p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.ray b {
+  float: left;
+  overflow: hidden;
+  height: 62px;
+  top: 40px;
+}
+.ray .innerIam {
+  display: inline-block;
+  color: #ef3534;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 8s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 8s;
+        animation:move 8s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:2s;
+   -moz-animation-delay:2s;
+    -ms-animation-delay:2s;
+     -o-animation-delay:2s;
+        animation-delay:2s;
+}
+@keyframes move{
+    0%  { top: 0px; }
+    20% { top: -60px; }
+    40% { top: -120px; }
+    60% { top: -185px; }
+    80% { top: -245px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -60px; }
+    40% { top: -120px; }
+    60% { top: -185px; }
+    80% { top: -245px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -60px; }
+    40% { top: -120px; }
+    60% { top: -185px; }
+    80% { top: -245px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -60px; }
+    40% { top: -120px; }
+    60% { top: -190px; }
+    80% { top: -245px; }
+}
+@keyframes move {
+    0%  { top: -16px; }
+    20% { top: -61px; }
+    40% { top: -120px; }
+    60% { top: -180px; }
+    80% { top: -240px; }
 }
