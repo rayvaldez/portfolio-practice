@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&family=El+Messiri:wght@400;500&family=Montserrat:wght@400;700&family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&family=Bangers&family=El+Messiri:wght@400;500&family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Zen+Tokyo+Zoo&display=swap');
 
 /* Medium screens */
 @media all and (max-width: 800px) {
@@ -36,6 +36,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 1.1em;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -142,101 +143,13 @@ a:hover span {
   width: 92%;
   margin-top: 85px;
   margin-left: 60px;
+  margin-bottom: 30px;
   font-family: 'Assistant', sans-serif;
-  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 2)), url('./images/jonggak1.jpg');
+  background: radial-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.1)), url('./images/jonggak1.jpg');
   background-position: center;
   background-size: cover;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-
-.section-about {
-  border-style: dotted;
-  border-color: #000;
-  height: 80%;
-  width: 92%;
-  margin-left: 60px;
-  margin-top: 75px;
-  overflow: hidden;
-}
-
-.section-about #developer {
-  position: relative;
-  top: 22%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  height: 300px;
-  width: 300px;
-  transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
-  overflow: hidden;
-}
-
-.section-about #camera{
-  height: 90px;
-  width: 100px;
-  margin-top: -100px;
-  margin-left: -150px;
-}
-
-.section-about #motorbike{
-  height: 120px;
-  width: 130px;
-  margin-left: 2200px;
-}
-
-.section-about h4 {
-  font-size: 2em;
-  padding-top: 100px;
-  padding-left: 20px;
-}
-
-.section-about p {
-  font-size: 1em;
-  padding-left: 20px;
-}
-
-.section-projects {
-  border-style: dotted;
-  border-color: #000;
-  height: 80%;
-  width: 92%;
-  margin-left: 60px;
-  margin-top: 75px;
-  overflow: hidden;
-}
-
-.section-projects h4 {
-  font-size: 2em;
-  padding-top: 100px;
-  padding-left: 20px;
-}
-
-.section-projects p {
-  font-size: 1em;
-  padding-left: 20px;
-}
-
-.section-contact {
-  border-style: dotted;
-  border-color: #000;
-  height: 80%;
-  width: 92%;
-  margin-left: 60px;
-  margin-top: 75px;
-  overflow: hidden;
-}
-
-.section-contact h4 {
-  font-size: 2em;
-  padding-top: 50px;
-  padding-left: 20px;
-}
-
-.section-contact p {
-  font-size: 1em;
-  padding-left: 20px;
-}
-
 
 .ray {
   filter: brightness(1.6);
@@ -322,4 +235,107 @@ a:hover span {
     40% { top: -120px; }
     60% { top: -180px; }
     80% { top: -240px; }
+}
+
+.about {
+  font-family: "Montserrat", sans-serif;
+  background: radial-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.1)), url('./images/leaves.jpg');
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-position: center;
+  background-size: cover;
+  height: 85%;
+  width: 92%;
+  margin-left: 60px;
+  margin-top: 120px;
+  overflow: hidden;
+  color: #fefefe;
+}
+
+.about #developer {
+  position: relative;
+  top: -100%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.about #camera{
+  height: 90px;
+  width: 100px;
+  margin-top: -100px;
+  margin-left: -150px;
+}
+
+.about #motorbike{
+  height: 120px;
+  width: 130px;
+  margin-left: 2200px;
+}
+
+.about h4 {
+  font-size: 1em;
+  padding-left: 20px;
+}
+
+.about #about-me {
+  font-family: "Bangers", sans-serif;
+  font-size: 2em;
+  padding-left: 20px;
+  position: relative;
+  top: 15%;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+}
+
+
+.about #accent {
+  font-family: "Bangers", sans-serif;
+  font-size: 1.8em;
+  color: #EF3534;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+}
+
+.projects {
+  border-style: dotted;
+  border-color: #000;
+  height: 80%;
+  width: 92%;
+  margin-left: 60px;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+.projects h4 {
+  font-size: 2em;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+.projects p {
+  font-size: 1em;
+  padding-left: 20px;
+}
+
+.contact {
+  border-style: dotted;
+  border-color: #000;
+  height: 40%;
+  width: 92%;
+  margin-left: 60px;
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+.contact h4 {
+  font-size: 2em;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.contact p {
+  font-size: 1em;
+  padding-left: 20px;
 }
