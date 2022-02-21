@@ -4,15 +4,127 @@
 @media all and (max-width: 800px) {
   .navigation {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 }
 
 /* Small screens */
 @media all and (max-width: 500px) {
-  .navigation {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+
+  header .navigation {
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    margin-top: 2vh;
+    margin-left: 2vh;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 0.8em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  header ul li a {
+    padding: 0.2em 1em;
+  }
+
+  .landing-container {
+    margin-top: 10vh;
+    background: radial-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.1)), url('./images/jonggak1.jpg');
+    height: 90%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+
+  .ray {
+    /* padding: 2em 5em; */
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .ray p {
+    font-size: 1.8em;
+    /* height: 50px; */
+    margin-left: 1.3em;
+    /* margin-right: 0.3em; */
+  }
+
+  .ray b {
+    font-size: 2em;
+    overflow: hidden;
+    height: 62px;
+    top: 40px;
+  }
+
+  .ray .innerIam {
+    display: inline-block;
+    color: #ef3534;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+
+  /*animation*/
+  -webkit-animation:move 8s;
+     -moz-animation:move 5s;
+      -ms-animation:move 5s;
+       -o-animation:move 8s;
+          animation:move 8s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count:infinite;
+     -moz-animation-iteration-count:infinite;
+      -ms-animation-iteration-count:infinite;
+       -o-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+  /*animation-delay*/
+  -webkit-animation-delay:2s;
+     -moz-animation-delay:2s;
+      -ms-animation-delay:2s;
+       -o-animation-delay:2s;
+          animation-delay:2s;
+  }
+
+  .about {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.1)), url('./images/leaves.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+
+  .about h4 {
+    font-size: 0.8em;
+  }
+
+  .about #about-me {
+    font-size: 0.5em;
+    color: #FFF;
+    top: 10%;
+  }
+
+  .about #accent {
+    font-size: 1.3em;
+  }
+
+  .projects {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact {
+    height: 50%;
+    width: 100%;
   }
 }
 
@@ -50,7 +162,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 17px 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +174,7 @@ header .logo {
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  /* letter-spacing: 1vh; */
 }
 
 header .navigation {
@@ -76,13 +187,13 @@ header .navigation {
 
 header ul li {
   list-style: none;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-weight: 400;
   font-size: 0.8em;
 }
 
 header ul li a {
-  padding: 6px 15px;
+  /* padding: 6px 15px; */
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -138,7 +249,7 @@ a:hover span {
 }
 
 .landing-container {
-  color: #FFF;
+  /* color: #FFF;
   height: 80%;
   width: 92%;
   margin-top: 85px;
@@ -148,7 +259,7 @@ a:hover span {
   background: radial-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.1)), url('./images/jonggak1.jpg');
   background-position: center;
   background-size: cover;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .ray {
@@ -158,11 +269,11 @@ a:hover span {
   left: 40%;
   transform: translate(-50%, -50%);
   /* padding: 2em 5em; */
-  font: normal 50px/60px "Montserrat", sans-serif;
+  /* font: normal 50px/60px "Montserrat", sans-serif; */
   color: #FFF;
 }
 .ray p {
-  height: 50px;
+  /* height: 50px; */
   float: left;
   margin-right: 0.3em;
 }
@@ -238,7 +349,7 @@ a:hover span {
 }
 
 .about {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif;
   background: radial-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.1)), url('./images/leaves.jpg');
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   background-position: center;
@@ -248,7 +359,7 @@ a:hover span {
   margin-left: 60px;
   margin-top: 100px;
   overflow: hidden;
-  color: #fefefe;
+  color: #fefefe; */
 }
 
 .about #developer {
@@ -278,37 +389,37 @@ a:hover span {
 
 .about h4 {
   font-size: 1em;
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 
 .about #about-me {
   font-family: "Bangers", sans-serif;
   font-size: 2em;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   position: relative;
-  top: 15%;
+  /* top: 15%; */
   text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
 }
 
 
 .about #accent {
   font-family: "Bangers", sans-serif;
-  font-size: 1.8em;
+  /* font-size: 1.8em; */
   color: #EF3534;
   text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
 }
 
-#scroll-about, #scroll-projects, #scroll-contact {
+/* #scroll-about, #scroll-projects, #scroll-contact {
   margin-top: 50px;
-}
+} */
 
 .projects {
-  height: 80%;
+  /* height: 80%;
   width: 92%;
   margin-left: 60px;
   margin-top: 115px;
   overflow: hidden;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .projects #project-1, #project-2, #project-3 {
@@ -326,13 +437,13 @@ a:hover span {
 }
 
 .contact {
-  border-style: dotted;
+  /* border-style: dotted;
   border-color: #000;
   height: 40%;
   width: 92%;
   margin-left: 60px;
   margin-top: 120px;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .contact h4 {
