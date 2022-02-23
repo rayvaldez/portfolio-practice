@@ -1,5 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&family=Bangers&family=El+Messiri:wght@400;500&family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Zen+Tokyo+Zoo&display=swap');
 
+* {
+  /* background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important; */
+}
+
+header {
+  display: inline-block;
+  margin-top: 1.5vh;
+  margin-left: 1.5vh;
+}
+
+.logo {
+  grid-area: logo;
+  float: left;
+}
+
+.navigation {
+  grid-area: navigation;
+  float: right;
+  padding-right: 3vw;
+}
+
+.landing-container {
+  grid-area: landing;
+  background: radial-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.1)), url('./images/jonggak1.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 95vh;
+  margin-top: 5vh;
+}
+
+.about {
+  grid-area: about;
+}
+
+.project-1 {
+  grid-area: project-1;
+}
+
+.project-2 {
+  grid-area: project-2;
+}
+
+.project-3 {
+  grid-area: project-3;
+}
+
+.project-4 {
+  grid-area: project-4;
+}
+
+.project-5 {
+  grid-area: project-5;
+}
+
+.project-6 {
+  grid-area: project-6;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "navigation"
+    "landing"
+    "about"
+    "project-1"
+    "project-2"
+    "project-3"
+    "project-4"
+    "project-5"
+    "project-6"
+    "contact"
+    "footer"
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "logo navigation"
+      "landing landing"
+      "about about"
+      "project-1 project-1"
+      "project-2 project-2"
+      "project-3 project-3"
+      "project-4 project-4"
+      "project-5 project-5"
+      "project-6 project-6"
+      "contact contact"
+      "footer footer"
+  }
+
+  navigation ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas:
+      "logo navigation navigation"
+      "landing landing landing"
+      "about about about"
+      "project-1 project-2 project3"
+      "project-4 project-5 project6"
+      "contact contact contact"
+      "footer footer footer"
+  }
+
+
+}
+
 /* Medium screens */
 @media all and (max-width: 800px) {
   .navigation {
@@ -9,7 +134,7 @@
 }
 
 /* Small screens */
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
 
   header {
     display: inline-block;
@@ -38,24 +163,24 @@
 
   header ul li a {
     padding: 0.2em 1em;
-  }
+  } */
 
-  .landing-container {
+  /* .landing-container {
     margin-top: 7vh;
     background: radial-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.1)), url('./images/jonggak1.jpg');
     height: 95%;
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
-  }
+  } */
 
-  .ray {
+  /* .ray { */
     /* padding: 2em 5em; */
-    font-family: "Montserrat", sans-serif;
-    height: 10%;
+    /* font-family: "Montserrat", sans-serif; */
+    /* height: 10%; */
   }
 
-  .ray p {
+  /* .ray p {
     font-size: 1.8em;
     margin-left: 1.3em;
   }
@@ -74,7 +199,7 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-    margin-left: 1em;
+    margin-left: 1em; */
 
   /*animation*/
   -webkit-animation:move 8s;
@@ -95,7 +220,7 @@
        -o-animation-delay:2s;
           animation-delay:2s;
   }
-
+/*
   .about {
     width: 100%;
     height: 100%;
@@ -124,22 +249,7 @@
   .contact {
     height: 50%;
     width: 100%;
-  }
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.0);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.0);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.);
-		transform: translatey(0px);
-	}
+  } */
 }
 
 * {
@@ -262,33 +372,33 @@ a:hover span {
 }
 
 .ray {
-  filter: brightness(1.6);
+  /* filter: brightness(1.6);
   position: absolute;
   top: 45%;
   left: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   /* padding: 2em 5em; */
   /* font: normal 50px/60px "Montserrat", sans-serif; */
-  color: #FFF;
+  /* color: #FFF; */
 }
 .ray p {
   /* height: 50px; */
-  float: left;
-  margin-right: 0.3em;
+  /* float: left;
+  margin-right: 0.3em; */
 }
 .ray b {
-  float: left;
+  /* float: left;
   overflow: hidden;
   height: 62px;
-  top: 40px;
+  top: 40px; */
 }
 .ray .innerIam {
-  display: inline-block;
+  /* display: inline-block;
   color: #ef3534;
   position: relative;
   white-space: nowrap;
   top: 0;
-  left: 0;
+  left: 0; */
 
 
 /*animation*/
@@ -361,36 +471,6 @@ a:hover span {
   color: #fefefe; */
 }
 
-.about #developer {
-  position: relative;
-  top: -100%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  height: 300px;
-  width: 300px;
-  transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
-  overflow: hidden;
-}
-
-.about #camera{
-  height: 90px;
-  width: 100px;
-  margin-top: -100px;
-  margin-left: -150px;
-}
-
-.about #motorbike{
-  height: 120px;
-  width: 130px;
-  margin-left: 2200px;
-}
-
-.about h4 {
-  font-size: 1em;
-  /* padding-left: 20px; */
-}
-
 .about #about-me {
   font-family: "Bangers", sans-serif;
   /* font-size: 2em; */
@@ -421,19 +501,19 @@ a:hover span {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
-.projects #project-1, #project-2, #project-3 {
+/* .projects #project-1, #project-2, #project-3 {
   display: inline-block;
   width: 33.33333%;
   height:50%;
   overflow: hidden;
-}
+} */
 
-.projects #project-4, #project-5, #project-6 {
+/* .projects #project-4, #project-5, #project-6 {
   display: inline-block;
   width: 33.33333%;
   height: 50%;
   overflow: hidden;
-}
+} */
 
 .contact {
   /* border-style: dotted;
@@ -445,13 +525,13 @@ a:hover span {
   overflow: hidden; */
 }
 
-.contact h4 {
+/* .contact h4 {
   font-size: 2em;
   padding-top: 50px;
   padding-left: 20px;
-}
+} */
 
-.contact p {
+/* .contact p {
   font-size: 1em;
   padding-left: 20px;
-}
+} */
