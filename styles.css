@@ -11,16 +11,19 @@
 /* Small screens */
 @media all and (max-width: 500px) {
 
+  header {
+    display: inline-block;
+    margin-top: 1.5vh;
+    margin-left: 1vh;
+  }
+
   header .navigation {
-    display: inline-flex;
-    flex-flow: wrap;
-    justify-content: flex-start;
+    float:right;
   }
 
   .logo {
-    font-size: 1.5em;
-    margin-top: 2vh;
-    margin-left: 2vh;
+    font-size: 1.1rem;
+    float: left;
   }
 
   header ul {
@@ -28,7 +31,7 @@
     list-style: none;
     justify-content: space-between;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 1rem;
     overflow: hidden;
     position: relative;
   }
@@ -38,9 +41,9 @@
   }
 
   .landing-container {
-    margin-top: 10vh;
+    margin-top: 7vh;
     background: radial-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.1)), url('./images/jonggak1.jpg');
-    height: 90%;
+    height: 95%;
     background-repeat:no-repeat;
     background-size: cover;
     background-position:center;
@@ -49,13 +52,12 @@
   .ray {
     /* padding: 2em 5em; */
     font-family: "Montserrat", sans-serif;
+    height: 10%;
   }
 
   .ray p {
     font-size: 1.8em;
-    /* height: 50px; */
     margin-left: 1.3em;
-    /* margin-right: 0.3em; */
   }
 
   .ray b {
@@ -103,18 +105,15 @@
     background-position:center;
   }
 
-  .about h4 {
-    font-size: 0.8em;
-  }
-
   .about #about-me {
-    font-size: 0.5em;
+    margin-left: 2vh;
+    font-size: 2rem;
     color: #FFF;
-    top: 10%;
+    top: 17vh;
   }
 
   .about #accent {
-    font-size: 1.3em;
+    font-size: 2.5rem;
   }
 
   .projects {
@@ -172,8 +171,8 @@ header .logo {
   font-family: 'Zen Tokyo Zoo', cursive;
   text-shadow: 2px 3px 6px rgba(0,0,0,0.41);
   text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
+  /* font-size: 2em; */
+  /* text-transform: uppercase; */
   /* letter-spacing: 1vh; */
 }
 
@@ -394,7 +393,7 @@ a:hover span {
 
 .about #about-me {
   font-family: "Bangers", sans-serif;
-  font-size: 2em;
+  /* font-size: 2em; */
   /* padding-left: 20px; */
   position: relative;
   /* top: 15%; */
