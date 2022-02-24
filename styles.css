@@ -13,10 +13,9 @@ body {
 }
 
 header {
-  display: inline-block;
+  grid-area: header;
   padding-top: 1.5vh;
   padding-left: 1.5vh;
-  width: 100vw;
 }
 
 .logo {
@@ -29,10 +28,9 @@ header {
 .navigation {
   grid-area: navigation;
   font-family: "Poiret One", serif;
-  padding-right: 8vw;
+  /* padding-right: 8vw; */
   display: inline-flex;
   flex-flow: wrap;
-  justify-content: flex-start;
   list-style: none;
   float: right;
 }
@@ -140,7 +138,6 @@ header ul li a {
 }
 
 .about {
-  padding: 35vh 2vh;
   grid-area: about;
   background: radial-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.1)), url('./images/leaves.jpg');
   background-repeat:no-repeat;
@@ -148,10 +145,10 @@ header ul li a {
   background-position:center;
   height: 100vh;
   color: #FFF;
+  font-family: "Bangers", sans-serif;
 }
 
 .about #me {
-  font-family: "Bangers", sans-serif;
   font-size: 1.5em;
   position: relative;
   text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
@@ -198,7 +195,7 @@ header ul li a {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
-    "logo navigation"
+    "header header"
     "landing landing"
     "about about"
     "project-1 project-1"
@@ -208,7 +205,7 @@ header ul li a {
     "project-5 project-5"
     "project-6 project-6"
     "contact contact"
-    "footer footer"
+    "footer footer";
 }
 
 /* Tablets */
@@ -216,7 +213,7 @@ header ul li a {
   .wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "logo navigation navigation navigation"
+      "header header header header"
       "landing landing landing landing"
       "about about about about"
       "project-1 project-1 project-2 project-2"
@@ -226,17 +223,14 @@ header ul li a {
       "footer footer footer footer"
   }
 
-  .ray b {
-    position: inherit;
-  }
-
 }
 
+/* desktop */
 @media (min-width: 800px) {
   .wrapper {
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas:
-      "logo navigation navigation"
+      "header header header"
       "landing landing landing"
       "about about about"
       "project-1 project-2 project-3"
@@ -244,39 +238,15 @@ header ul li a {
       "contact contact contact"
       "footer footer footer"
   }
+
+  .ray b {
+    position: inherit;
+  }  
 }
 
 /* Small screens */
 /* @media all and (max-width: 500px) {
 
-  header {
-    display: inline-block;
-    margin-top: 1.5vh;
-    margin-left: 1vh;
-  }
-
-  header .navigation {
-    float:right;
-  }
-
-  .logo {
-    font-size: 1.1rem;
-    float: left;
-  }
-
-  header ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    font-weight: 400;
-    font-size: 1rem;
-    overflow: hidden;
-    position: relative;
-  }
-
-  header ul li a {
-    padding: 0.2em 1em;
-  } */
 
   /* .landing-container {
     margin-top: 7vh;
@@ -287,25 +257,7 @@ header ul li a {
     background-position:center;
   } */
 
-  /* .ray { */
-    /* padding: 2em 5em; */
-    /* font-family: "Montserrat", sans-serif; */
-    /* height: 10%; */
-  }
-
-  /* .ray p {
-    font-size: 1.8em;
-    margin-left: 1.3em;
-  }
-
-  .ray b {
-    font-size: 2em;
-    overflow: hidden;
-    height: 62px;
-    top: 40px;
-  }
-
-  .ray .innerIam {
+  /*.ray .innerIam {
     display: inline-block;
     color: #ef3534;
     position: relative;
@@ -448,20 +400,3 @@ a:hover span {
   overflow: hidden;
   color: #fefefe; */
 }
-
-.about #about-me {
-  font-family: "Bangers", sans-serif;
-  /* font-size: 2em; */
-  /* padding-left: 20px; */
-  position: relative;
-  /* top: 15%; */
-  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
-}
-
-/*
-.about #accent {
-  font-family: "Bangers", sans-serif;
-  font-size: 1.8em;
-  color: #EF3534;
-  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
-} */
