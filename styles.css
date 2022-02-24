@@ -14,7 +14,7 @@ body {
 
 header {
   grid-area: header;
-  padding-top: 1.5vh;
+  padding-top: 1.9vh;
   padding-left: 1.5vh;
 }
 
@@ -23,6 +23,7 @@ header {
   font-family: 'Zen Tokyo Zoo', cursive;
   text-shadow: 2px 3px 6px rgba(0,0,0,0.41);
   text-decoration: none;
+  font-size: 1.5em;
 }
 
 .navigation {
@@ -40,6 +41,7 @@ header ul li a {
   position: relative;
   display: inline-block;
   padding-right: 0.8em;
+  padding-top: 1vh;
 }
 
 .landing-container {
@@ -48,8 +50,8 @@ header ul li a {
   background-repeat:no-repeat;
   background-size: cover;
   background-position:center;
-  height: 99vh;
-  margin-top: 1vh;
+  height: 93vh;
+  margin-top: 1.5vh;
 }
 
 .ray {
@@ -148,19 +150,28 @@ header ul li a {
   font-family: "Bangers", sans-serif;
 }
 
-.about #me {
-  font-size: 1.5em;
+.about {
+  font-size: 6vw;
+}
+
+.about #about-me {
+  margin-top: 11vh;
+  text-align: center;
   position: relative;
   text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
 }
 
 .about #accent {
-  font-size: 1.8em;
+  font-size: 11vw;
   color: #EF3534;
 }
 
 .project-1 {
   grid-area: project-1;
+}
+
+.project #pro1 {
+  height: 100%;
 }
 
 .project-2 {
@@ -223,6 +234,17 @@ header ul li a {
       "footer footer footer footer"
   }
 
+  .about {
+    font-size: 6vh;
+  }
+
+  .about #about-me {
+    margin-top: 1.5vh;
+  }
+
+  .about #accent {
+    font-size: 9vh;
+  }
 }
 
 /* desktop */
@@ -241,7 +263,19 @@ header ul li a {
 
   .ray b {
     position: inherit;
-  }  
+  }
+
+  .about {
+    font-size: 7vh;
+  }
+
+  .about #about-me {
+    margin-top: 1vh;
+  }
+
+  .about #accent {
+    font-size: 10vh;
+  }
 }
 
 /* Small screens */
@@ -376,27 +410,13 @@ a:hover span {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
-.ray {
-  /* filter: brightness(1.6);
+/* .ray {
+  filter: brightness(1.6);
   position: absolute;
   top: 45%;
   left: 40%;
-  transform: translate(-50%, -50%); */
-  /* padding: 2em 5em; */
-  /* font: normal 50px/60px "Montserrat", sans-serif; */
-  /* color: #FFF; */
-}
-
-.about {
-  /* font-family: "Montserrat", sans-serif;
-  background: radial-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.1)), url('./images/leaves.jpg');
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  background-position: center;
-  background-size: cover;
-  height: 85%;
-  width: 92%;
-  margin-left: 60px;
-  margin-top: 100px;
-  overflow: hidden;
-  color: #fefefe; */
-}
+  transform: translate(-50%, -50%);
+  padding: 2em 5em;
+  font: normal 50px/60px "Montserrat", sans-serif;
+  color: #FFF;
+} */
