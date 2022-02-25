@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&family=Bangers&family=El+Messiri:wght@400;500&family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Zen+Tokyo+Zoo&display=swap');
 
 * {
-  /* background: #000 !important;
+  background: #000 !important;
   color: #0f0 !important;
-  outline: solid #f00 1px !important; */
+  outline: solid #f00 1px !important;
   margin: 0;
   scroll-behavior: smooth;
 }
@@ -168,30 +168,57 @@ header ul li a {
 
 .project-1 {
   grid-area: project-1;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
 
-.project #pro1 {
-  height: 100%;
+#pro1, #pro2, #pro3, #pro4, #pro5, #pro6 {
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 85vh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  transform:translate(12.4%, -50%);
 }
 
 .project-2 {
   grid-area: project-2;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
 
 .project-3 {
   grid-area: project-3;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
 
 .project-4 {
   grid-area: project-4;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
 
 .project-5 {
   grid-area: project-5;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
+
 
 .project-6 {
   grid-area: project-6;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
 
 .contact {
@@ -244,6 +271,18 @@ header ul li a {
 
   .about #accent {
     font-size: 9vh;
+  }
+
+  #pro1, #pro2, #pro3, #pro4, #pro5, #pro6 {
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85vh;
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    transform:translate(0, -50%);
   }
 }
 
