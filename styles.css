@@ -217,6 +217,21 @@ a:hover span {
   color: #EF3534;
 }
 
+.wrapper > .projects {
+  grid-row: 4/10;
+  grid-column: 1/4;
+  background-color: #FFF;
+}
+
+.projects h1 {
+  font-size: 5em;
+  text-align: center;
+  position: sticky;
+  z-index: 1;
+  top: 40%;
+  font-family: "Markazi Text", sans-serif;
+}
+
 .project-1 {
   grid-area: project-1;
   overflow: hidden;
@@ -234,7 +249,8 @@ a:hover span {
   position: absolute;
   top: 50%;
   transform:translate(12.4%, -50%);
-}
+  z-index: 10;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
 
 .project-2 {
   grid-area: project-2;
