@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&family=Bangers&family=El+Messiri:wght@400;500&family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Zen+Tokyo+Zoo&display=swap');
 
 * {
-  /* background: #000 !important;
+  background: #000 !important;
   color: #0f0 !important;
-  outline: solid #f00 1px !important; */
+  outline: solid #f00 1px !important;
   margin: 0;
   scroll-behavior: smooth;
 }
@@ -219,24 +219,27 @@ a:hover span {
 
 .wrapper > .projects {
   grid-row: 4/10;
-  grid-column: 1/4;
+  grid-column: 1/5;
   background-color: #FFF;
 }
 
 .projects h1 {
-  font-size: 5em;
+  margin-top: -1vh;
+  font-size: 4.3em;
   text-align: center;
   position: sticky;
   z-index: 1;
-  top: 40%;
+  top: 50%;
   font-family: "Markazi Text", sans-serif;
+  text-shadow: 2px 3px 5px rgba(37,16,10,0.61);
 }
 
 .project-1 {
   grid-area: project-1;
   overflow: hidden;
-  height: 100vh;
+  height: 73vh;
   position: relative;
+  margin-top: 2vh;
 }
 
 #pro1, #pro2, #pro3, #pro4, #pro5, #pro6 {
@@ -244,39 +247,41 @@ a:hover span {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 85vh;
+  height: 60vh;
   width: 80vw;
   position: absolute;
-  top: 50%;
-  transform:translate(12.4%, -50%);
+  top: 51%;
+  transform:translate(12%, -50%);
   z-index: 10;
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 0.5vh;
+}
 
 .project-2 {
   grid-area: project-2;
   overflow: hidden;
-  height: 100vh;
+  height: 73vh;
   position: relative;
 }
 
 .project-3 {
   grid-area: project-3;
   overflow: hidden;
-  height: 100vh;
+  height: 73vh;
   position: relative;
 }
 
 .project-4 {
   grid-area: project-4;
   overflow: hidden;
-  height: 100vh;
+  height: 73vh;
   position: relative;
 }
 
 .project-5 {
   grid-area: project-5;
   overflow: hidden;
-  height: 100vh;
+  height: 73vh;
   position: relative;
 }
 
@@ -284,7 +289,7 @@ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
 .project-6 {
   grid-area: project-6;
   overflow: hidden;
-  height: 100vh;
+  height: 73vh;
   position: relative;
 }
 
@@ -337,16 +342,21 @@ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
     font-size: 8vh;
   }
 
+  .project-1, .project-2 {
+    margin-top: 3vh;
+  }
+
   #pro1, #pro2, #pro3, #pro4, #pro5, #pro6 {
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 85vh;
+    height: 60vh;
     width: 42vw;
     position: absolute;
     top: 50%;
-    transform:translate(12%, -50%);
+    transform:translate(9%, -50%);
+    border-radius: 0.5vw;
   }
 }
 
@@ -380,15 +390,23 @@ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
     font-size: 9vh;
   }
 
+  .project-3 {
+    margin-top: 3vh;
+  }
+
   #pro1, #pro2, #pro3, #pro4, #pro5, #pro6 {
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 85vh;
+    height: 55vh;
     width: 27vw;
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform:translate(12%, -50%);
+  }
+
+  .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+    height: 70vh;
   }
 }
