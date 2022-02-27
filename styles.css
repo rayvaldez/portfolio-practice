@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600;700&family=Bangers&family=El+Messiri:wght@400;500&family=Markazi+Text:wght@400;500;600;700&family=Poiret+One&family=Zen+Tokyo+Zoo&display=swap');
 
 * {
-  background: #000 !important;
+  /* background: #000 !important;
   color: #0f0 !important;
-  outline: solid #f00 1px !important;
+  outline: solid #f00 1px !important; */
   margin: 0;
   scroll-behavior: smooth;
 }
@@ -188,15 +188,38 @@ a:hover span {
     80% { top: -200px; }
 }
 
-.about {
+.about-container {
   grid-area: about;
+  height: 100vh;
+}
+
+.about-container h1 {
+  margin-top: -1vh;
+  font-size: 4.3em;
+  text-align: center;
+  position: sticky;
+  top: 1%;
+  font-family: "Markazi Text", sans-serif;
+  text-shadow: 2px 3px 5px rgba(37,16,10,0.61);
+  z-index: 1;
+}
+
+.about {
   background: radial-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.1)), url('./images/leaves.jpg');
   background-repeat:no-repeat;
   background-size: cover;
   background-position:center;
-  height: 100vh;
+  margin-top: -2vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 85%;
+  width: 88%;
   color: #FFF;
   font-family: "Bangers", sans-serif;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 0.5vh;
+  z-index: 10;
+  position: relative;
 }
 
 .about {
@@ -224,7 +247,7 @@ a:hover span {
 }
 
 .projects h1 {
-  margin-top: -1vh;
+  margin-top: -4vh;
   font-size: 4.3em;
   text-align: center;
   position: sticky;
@@ -379,6 +402,7 @@ a:hover span {
   }
 
   .about {
+    width: 95%;
     font-size: 6vh;
   }
 
